@@ -1,0 +1,43 @@
+{
+  "name": "rev-all",
+  "version": "0.0.0",
+  "description": "Command line utility for filename revisions",
+  "main": "index.js",
+  "bin": {
+    "rev-all": "bin/rev-all.js"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/L8D/rev-all.git"
+  },
+  "keywords": [
+    "gulp-rev-all",
+    "rev-all",
+    "rev",
+    "all",
+    "asset",
+    "assets",
+    "cache",
+    "versioning",
+    "version",
+    "expire",
+    "static"
+  ],
+  "author": "Tenor Biel <tenorbiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/L8D/rev-all/issues"
+  },
+  "homepage": "https://github.com/L8D/rev-all",
+  "devDependencies": {
+    "standard": "^6.0.7"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "gulp": "^3.9.1",
+    "gulp-rev-all": "^0.8.24"
+  }
+}
