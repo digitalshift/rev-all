@@ -1,6 +1,6 @@
 {
   "name": "rev-all",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line utility for filename revisions",
   "main": "index.js",
   "bin": {
