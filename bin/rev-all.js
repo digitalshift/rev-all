@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const gulp = require('gulp')
+const vfs = require('vinyl-fs')
 const RevAll = require('gulp-rev-all')
 const args = require('commander')
 const path = require('path')
@@ -41,15 +41,15 @@ function run (input, output, options) {
     debug: options.verbose
   })
 
-  let stream = gulp.src(inputFiles)
+  let stream = vfs.src(inputFiles)
     .pipe(revAll.revision())
-    .pipe(gulp.dest(output))
+    .pipe(vfs.dest(output))
 
   if (options.manifest) {
     const dir = path.dirname(options.manifest)
 
     stream = stream
       .pipe(revAll.manifestFile())
-      .pipe(gulp.dest(dir))
+      .pipe(vfs.dest(dir))
   }
 }

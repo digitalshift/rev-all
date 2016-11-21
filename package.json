@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "gulp": "^3.9.1",
-    "gulp-rev-all": "^0.8.24"
+    "gulp-rev-all": "^0.8.24",
+    "vinyl-fs": "^2.4.4"
   }
 }
