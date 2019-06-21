@@ -21,6 +21,8 @@ args
           'A regex of files to not search for references')
   .option('--blacklist [regex]',
           'A regex of files to neither rename, search or update')
+  .option('--prefix [url]',
+          'Prefixes absolute references with a string')
   .option('-v --verbose',
           'Enable verbose logging')
   .action((input, output, options) => {
@@ -41,6 +43,7 @@ function run (input, output, options) {
     dontUpdateReference: options.dontUpdateReference ? options.dontUpdateReference.split(',') : [],
     dontSearchFile: options.dontSearch ? options.dontSearch.split(',') : [],
     fileNameManifest: options.manifest && path.basename(options.manifest),
+    prefix: options.prefix,
     debug: options.verbose
   })
 
